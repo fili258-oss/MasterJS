@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaces UI</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/07-interface.js"></script>
+
+    <style>
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 4px solid saddlebrown;
+            background: wheat;
+            margin: 20px;
+            float: left;
+            text-align: center;
+        }
+
+        .lista-seleccionable li {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid saddlebrown;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        ul .ui-slecting {
+            background: #f3f4f7;
+        }
+
+        ul .ui-selected {
+            background: #01a029;
+            color: white;
+        }
+        #elemento-movido{
+            width: 100px;
+            height: 100px;
+            border: 4px solid rgb(0, 255, 242);
+
+        }
+        #area{
+            width: 300px;
+            height: 300px;
+            border: 4px solid rgb(255, 208, 0);
+
+        }
+        .elemento {
+            background: rgb(1, 135, 197);
+            display: none;
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Interfaces Jquery UI</h2>
+
+    <hr>
+    <h3 id="encabezado">Tool Tip</h3>
+    <a href="page.html" class="tooltip" data-title="Tooltip Content">Tooltip Handle</a>
+    <a href="#" class="tooltip" title="Acceder a ala sección de mis datos de esta web">Mis compras</a>
+    <a href="#" class="tooltip" title="Acceder a ala sección de mis datos de esta web">Mis métodos de pago</a>
+    <hr>
+
+    <hr>
+    <h3 id="encabezado">Cuadros de diálogo</h3>
+    <button id="lanzar-pupup">Lansame</button>
+    <div class="popup" title="¿Estás seguro?">
+        <p>
+            Sí continuas en el curso aprenderás mucho de javascript
+        </p>
+    </div>
+    <hr>
+
+    <hr>
+    <h3 id="encabezado">Calendario</h3>
+    <input type="text" id="calendario">
+    <hr>
+
+    <hr>
+    <h3 id="encabezado">Pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tabs-1">Pestaña-1</a></li>
+            <li><a href="#tabs-2">Pestaña-2</a></li>
+            <li><a href="#tabs-3">Pestaña-3</a></li>
+            <li><a href="#tabs-4">Pestaña-4</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>Formulario</p>
+            <form action="#">
+                <input type="text" placeholder="Ingrese su edad">
+            </form>
+        </div>
+        <div id="tabs-2">
+            <p>hola soy la segunda pestaña :)</p>
+        </div>
+        <div id="tabs-3">
+            <p>hola soy la tercera pestaña :)</p>
+        </div>
+        <div id="tabs-4">
+            <p>hola soy la cuarta pestaña :)</p>
+        </div>
+    </div>
+    <hr>
+
+    <button id="mostrar">
+        Mostrar
+    </button>
+    <div class="caja-efectos elemento">
+        
+    </div>
+
+    <div id="elemento-movido">
+        
+    </div>
+    <br/>
+    <div id="area">
+
+    </div>
+    <ul class="lista-seleccionable">
+        <li>GTA 5</li>
+        <li>Need for speed</li>
+        <li>Crash bandicoot</li>
+        <li>Super Mario</li>
+        <li>Halo 2</li>
+    </ul>
+    <div class="elemento">
+        <p>Hola soy un elemento de la web :)</p>
+    </div>
+    <div class="elemento">
+        <p>Hola soy un elemento de la web :)</p>
+    </div>
+    <div class="elemento">
+        <p>Hola soy un elemento de la web :)</p>
+    </div>
+
+</body>
+
+</html>

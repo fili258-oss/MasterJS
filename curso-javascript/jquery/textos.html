@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/04-textos.js"></script>
+    <style>
+        .formulario{
+            text-align: center;
+            background: #f3f4f5;
+            padding-top: 20px;
+            border: 4px dashed black;
+            width: 250px;
+            height: 100px;
+
+        }
+        #add_button{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Aprendo JQUERY :)</h2>
+
+    <h3>Añadir nuevos enlaces</h3>
+    <div class="formulario">
+        <input type="text" id="add_link">
+        <button id="add_button" disabled="disabled">Add Link</button>
+    </div>
+    
+    <ul id="menu">
+        <li><a href="https://google.es"></a></li>
+        <li><a href="https://facebook.es"></a></li>
+        <li><a href="https://instagram.es"></a></li>
+        <li><a href="https://youtbe.com"></a></li>
+        <li><a href="https://linkedin.com"></a></li>
+    </ul>
+</body>
+</html>
