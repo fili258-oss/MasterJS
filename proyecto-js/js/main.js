@@ -97,4 +97,32 @@ $(document).ready(function () {
         }, 500)
         return false;
     });
+
+    //Login falso
+
+    $("#login form").submit(function(){
+        var for_name = $("#for_name").val();
+
+        localStorage.setItem("form_name", for_name);
+
+    });
+
+    var for_name = localStorage.getItem("form_name");
+
+    if(for_name){
+
+        var about_parrafo = $(".about p");
+        about_parrafo.html("<br><strong>Bienvenido, "+for_name+"</strong>");
+        about_parrafo.append("<br><a href='#' id='logout'>Cerrar sesión</a>");
+
+        $("#login").hide();        
+    }
+    
+    $("#logout").click(function(){
+        console.log("hey");
+        localStorage.clear();
+        location.reload();;
+
+    })
+
 });
